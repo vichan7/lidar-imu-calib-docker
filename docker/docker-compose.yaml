@@ -1,0 +1,36 @@
+version: '2.3'
+services:
+  orb_slam:
+    image: prasannaks07/orbslam_ros_16833:v0.1
+    container_name: orb_slam
+    privileged: true
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      # mmpug workspace
+      - ./../ws/:/home/developer/slam_ws/
+      # gui configurations
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /etc/localtime:/etc/localtime:ro
+      - /dev/input:/dev/input
+      - /dev/:/dev/
+      - /etc/hosts:/etc/hosts
+      - /var/log/syslog:/syslog
+
+    environment:
+      - ROS_SOURCED_WORKSPACE=/home/developer/slam_ws/devel/setup.bash
+      # Set environment params for GUI container passthrough
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=/tmp/.docker.xauth
+      # - QT_QPA_PLATFORM='offscreen'
+      # deployer export for exec call
+      # Set the hostnames of different systems
+      - HOSTNAME=${HOSTNAME}
+      - ROS_MASTER_IP=${HOSTNAME}
+      - ROS_HOSTNAME=${HOSTNAME}
+    entrypoint:
+      - /docker-entrypoint/ws-shell.bash
+    tty: true
+    # use host network
+    network_mode: "host"
