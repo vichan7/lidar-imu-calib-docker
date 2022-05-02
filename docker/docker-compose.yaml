@@ -1,8 +1,18 @@
 version: '2.3'
 services:
-  orb_slam:
-    image: prasannaks07/orbslam_ros_16833:v0.1
-    container_name: orb_slam
+  orbslam_ros2:
+    image: orb_slam_ros2
+    container_name: orb_slam_ros2
+    build:
+      # docker build context
+      context: ./../docker
+      dockerfile: ./../docker/Dockerfile.dockerfile
+      args:
+        - ROS_DISTRO=melodic
+        - ROS_HOSTNAME= $HOSTNAME
+        - HOSTNAME=$HOSTNAME
+        - user_id=1000
+        - group_id=1000
     privileged: true
     security_opt:
       - seccomp:unconfined
