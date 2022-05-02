@@ -1,0 +1,6 @@
+[submodule "ws/ORB_SLAM2"]
+	path = ws/ORB_SLAM2
+	url = https://github.com/Prassi07/ORB_SLAM2.git
+[submodule "ws/ros_ws/src/orbslam-deblur-pkg"]
+	path = ws/ros_ws/src/orbslam-deblur-pkg
+	url = https://github.com/Prassi07/orbslam-deblur-pkg.git
