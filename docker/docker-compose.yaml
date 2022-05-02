@@ -1,8 +1,8 @@
 version: '2.3'
 services:
-  orbslam_ros2:
-    image: orb_slam_ros2
-    container_name: orb_slam_ros2
+  orbslam_ros:
+    image: orb_slam_ros
+    container_name: orb_slam_ros
     build:
       # docker build context
       context: ./../docker
