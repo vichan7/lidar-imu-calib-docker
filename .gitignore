@@ -50,4 +50,8 @@ qtcreator-*
 # Catkin custom files
 CATKIN_IGNORE
 
-ws/
+ws/ros_ws/devel/
+ws/ros_ws/build/
+ws/.catkin_tools/
+*.catkin_workspace
+ws/ros_ws/src/CMakeLists.txt
