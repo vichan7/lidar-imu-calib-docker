@@ -28,7 +28,7 @@ services:
       - /var/log/syslog:/syslog
 
     environment:
-      - ROS_SOURCED_WORKSPACE=/home/developer/slam_ws/devel/setup.bash
+      - ROS_SOURCED_WORKSPACE=/home/developer/slam_ws/ros_ws/devel/setup.bash
       # Set environment params for GUI container passthrough
       - DISPLAY
       - QT_X11_NO_MITSHM=1

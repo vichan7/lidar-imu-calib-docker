@@ -60,7 +60,7 @@ RUN cmake --build .
 WORKDIR /home/$USERNAME/opencv/
 RUN mkdir build
 WORKDIR /home/$USERNAME/opencv/build
-RUN cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local #-D OPENCV_EXTRA_MODULES_PATH=/home/$USERNAME/opencv_contrib/modules/ ..
+RUN cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/home/$USERNAME/opencv_contrib/modules/ ..
 RUN make -j7 && sudo make install 
 
 WORKDIR /home/$USERNAME/
