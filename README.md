@@ -3,7 +3,7 @@ A ROS repository that performs ORB-SLAM2 on monocular camera and can account for
 
 -----------------------
 ## Building the docker-image
-The requirements for this are any version of `ROS1` on Linux, `docker` and `docker-compose`. To install this repository, please follow the commands below.
+The requirements for this are `ROS:melodic/noetic` on Linux, `docker` and `docker-compose`. To install this repository, please follow the commands below.
 
 ```console
 git clone https://github.com/Prassi07/orb-slam-16833.git
