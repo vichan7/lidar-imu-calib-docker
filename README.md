@@ -38,7 +38,7 @@ cd ~/slam_ws/ros_ws/
 catkin_make
 source ~/.bashrc
 ```
-This will build the ORBSLAM2 package and the deblur package and get them ready to run.
+This will build the ORB-SLAM2 package and the deblur package and get them ready to run.
 
 --------------
 
@@ -48,7 +48,7 @@ To run orb-slam with the deblurring on, run
 ```console
 roslaunch deblur_pkg orb_slam.launch
 ```
-ORB Slam requires a settings file for the camera. Check for the format in `ws/ORB_SLAM2/Examples/ROS/ORB_SLAM2/settings/`. The path for this file has to be set correctly in the orb_slam.launch file. The path is relative to the `ROS/ORB_SLAM2` directory.
+ORB-SLAM2 requires a settings file for the camera. Check for the format in `ws/ORB_SLAM2/Examples/ROS/ORB_SLAM2/settings/`. The path for this file has to be set correctly in the orb_slam.launch file. The path is relative to the `ROS/ORB_SLAM2` directory.
 
 The deblur package also has a number of parameters and the rostopics you can cofigure at `orbslam-deblur-pkg/config/config.yaml`. 
 
@@ -63,5 +63,5 @@ The deblur package also has a number of parameters and the rostopics you can cof
 
 ## Extra Information
 
-- The docker images don't run on Nvidia GPUs, ensure you're primary display manager is not NVIDIA. Set the GPU profile to either `on-demand` or `Intel` on nvidia-smi on ubuntu. The package will throw a X11 error otherwise.
+- The docker images don't run on NVIDIA GPUs, ensure you're primary display manager is not NVIDIA. Set the GPU profile to either `on-demand` or `Intel` on nvidia-smi on ubuntu. The package will throw a X11 error otherwise.
 - The ros-master is shared with the PC outside the docker. You can run any other package outside the container and send it to the ROS running inside the container.
