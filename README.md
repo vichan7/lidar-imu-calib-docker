@@ -9,6 +9,7 @@ The requirements for this are any version of `ROS1` on Linux, `docker` and `dock
 git clone https://github.com/Prassi07/orb-slam-16833.git
 cd orb-slam-16833
 git submodule update --init --recursive
+cd docker
 docker-compose build
 ```
 
