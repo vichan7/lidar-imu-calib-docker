@@ -1,16 +1,16 @@
 version: '2.3'
 services:
-  orbslam_ros:
-    image: orb_slam_ros
-    container_name: orb_slam_ros
+  lidar_jay_ros:
+    image: lidar_jay_ros
+    container_name: lidar_jay_ros
     build:
       # docker build context
-      context: ./../docker
-      dockerfile: ./../docker/Dockerfile.dockerfile
+      context: .
+      dockerfile: ./Dockerfile.dockerfile
       args:
         - ROS_DISTRO=melodic
         - ROS_HOSTNAME= $HOSTNAME
-        - HOSTNAME=$HOSTNAME
+        - HOSTNAME= $HOSTNAME
         - user_id=1000
         - group_id=1000
     privileged: true
@@ -18,7 +18,7 @@ services:
       - seccomp:unconfined
     volumes:
       # mmpug workspace
-      - ./../ws/:/home/developer/slam_ws/
+      - ./../ws/:/home/developer/lidar_jay_ws
       # gui configurations
       - /tmp/.X11-unix:/tmp/.X11-unix
       - /etc/localtime:/etc/localtime:ro
@@ -28,7 +28,7 @@ services:
       - /var/log/syslog:/syslog
 
     environment:
-      - ROS_SOURCED_WORKSPACE=/home/developer/slam_ws/ros_ws/devel/setup.bash
+      - ROS_SOURCED_WORKSPACE=/home/developer/lidar_jay_ws/ros_ws/devel/setup.bash
       # Set environment params for GUI container passthrough
       - DISPLAY
       - QT_X11_NO_MITSHM=1

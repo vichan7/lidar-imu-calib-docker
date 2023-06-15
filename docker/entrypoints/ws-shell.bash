@@ -9,7 +9,7 @@ usermod -u 1000 developer
 echo "Here"
 usermod -g 1000 developer
 
-sudo chown -R developer ~/slam_ws/ 
+sudo chown -R developer ~/lidar_jay_ws/ 
 
 # log message
 echo " == Workspace Shell == "

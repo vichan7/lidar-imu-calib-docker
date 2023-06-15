@@ -80,7 +80,7 @@ add_ros_top_level_ws() {
     echo "source /opt/ros/$_ROS_DISTRO/setup.bash " >> /$HOME/.$1
   fi
   echo "source $_ROS_WS " >> /$HOME/.$1
-  echo "export ROS_PACKAGE_PATH=\$ROS_PACKAGE_PATH:/home/developer/slam_ws/" >> /$HOME/.$1
+  echo "export ROS_PACKAGE_PATH=\$ROS_PACKAGE_PATH:/home/developer/lidar_jay_ws/" >> /$HOME/.$1
 }
 
 # Add the ros workspace to be sourced
