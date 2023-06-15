@@ -1,4 +1,4 @@
-# orb-slam-16833
+# lidar-imu-calib-docker
 A ROS repository that performs Lidar-IMU calibration using a modified version of APRIL Lab's lidar_IMU_calib repository. This repository contains the dockerfile that downloads dependencies needed for the modified lidar_IMU_calib repository and serves as a wrapper repo.
 Made for the MMPUG project at the CMU Biorobotics Lab.
 
