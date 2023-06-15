@@ -4,7 +4,7 @@ A ROS repository that performs Lidar-IMU calibration using a modified version of
 Made for the MMPUG project at the CMU Biorobotics Lab.
 
 ## Cloning Repositories
-Clone this repository and the [modified lidar_IMU_calib repository](https://github.com/vichan7/lidar_IMU_calib) with the following commands.
+Clone this repository and our modified [lidar_IMU_calib](https://github.com/vichan7/lidar_IMU_calib) repository with the following commands.
 ```
 git clone git@github.com:vichan7/lidar-imu-calib-docker.git
 cd ws/ros_ws/src
