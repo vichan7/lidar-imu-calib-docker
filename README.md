@@ -31,17 +31,27 @@ docker exec -it lidar_jay_ros bash
 ```
 ------
 
-## Using lidar_IMU_calib
+## Running lidar_IMU_calib
 Once inside the docker container, run the setup script for calibration.
 ```
 cd lidar_jay_ws/ros_ws/src
 bash ./setupcalib.sh
 ```
-Run the gui using the following command.
+Run the GUI using the following command. Note currently the topic names in `calib.sh` and `licalib_gui.launch` are formatted to work with bags that MMPUG produces, and may need to be changed to run other datasets.
 ```
 cd lidar_IMU_calib
 ./calib.sh
 ```
+------
+
+## Once the GUI runs...
+Details of the calibration process are in the README.md of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here some takeaways we got from using it.
+* Follow steps in lidar_IMU_calibration read me
+  * Can see in terminal when each step is done running
+* Don’t run multiple steps at the same time, gui will freeze
+* Running multiple bags:
+  * After the first bag runs, quit the gui (control C in terminal) and the next bag will start running 
+
 
 
 
