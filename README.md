@@ -10,7 +10,7 @@ Made for the MMPUG project at the CMU Biorobotics Lab.
 Clone this repository and our modified [lidar_IMU_calib](https://github.com/vichan7/lidar_IMU_calib) repository with the following commands.
 ```
 git clone git@github.com:vichan7/lidar-imu-calib-docker.git
-cd ws/ros_ws/src
+cd lidar-imu-calib-docker/ws/ros_ws/src
 git clone git@github.com:vichan7/lidar_IMU_calib.git
 ```
 -----
