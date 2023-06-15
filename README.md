@@ -53,6 +53,15 @@ Details of the calibration process are in the README.md of [APRIL Lab's lidar_IM
 * Running multiple bags:
   * After the first bag runs, quit the gui (control C in terminal) and the next bag will start running 
 
+-------
+
+## Adding New Data
+* When importing new bag files, add them to `ros_ws/li_data_calib`
+ * In ros_ws/src/lidar_IMU_calib/calib.sh update/replace the names of the bags
+ * Change the topic names in `calib.sh` and `licalib_gui.launch` to match the format of the bag you want to calib
+* Saved maps can be found in `ros_ws/li_data_calib` under a folder that shares a name with the .bag file
+
+
 
 
 
