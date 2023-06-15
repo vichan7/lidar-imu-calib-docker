@@ -3,7 +3,7 @@ A ROS repository that performs Lidar-IMU calibration using a modified version of
 
 Made for the MMPUG project at the CMU Biorobotics Lab.
 
-## Setup
+## Cloning Repositories
 Clone this repository and the [modified lidar_IMU_calib repository](https://github.com/vichan7/lidar_IMU_calib) with the following commands.
 ```
 git clone git@github.com:vichan7/lidar-imu-calib-docker.git
@@ -28,6 +28,19 @@ Once the environment setup is successful, press `Ctrl + C` to exit the container
 ```
 docker start lidar_jay_ros
 docker exec -it lidar_jay_ros bash
+```
+------
+
+## Using lidar_IMU_calib
+Once inside the docker container, run the setup script for calibration.
+```
+cd lidar_jay_ws/ros_ws/src
+bash ./setupcalib.sh
+```
+Run the gui using the following command.
+```
+cd lidar_IMU_calib
+./calib.sh
 ```
 
 
