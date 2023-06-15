@@ -13,8 +13,6 @@ git clone git@github.com:vichan7/lidar-imu-calib-docker.git
 cd ws/ros_ws/src
 git clone git@github.com:vichan7/lidar_IMU_calib.git
 ```
-Also, make sure that docker is installed and accessible 
-
 -----
 ## Building Docker Image and Container
 Starting from the `lidar-imu-calib-docker` directory, build the docker image
