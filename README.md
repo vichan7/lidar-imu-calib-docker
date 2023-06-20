@@ -13,7 +13,7 @@ git clone git@github.com:vichan7/lidar-imu-calib-docker.git
 cd lidar-imu-calib-docker/ws/ros_ws/src
 git clone git@github.com:vichan7/lidar_IMU_calib.git
 ```
------
+
 ## Building Docker Image and Container
 Starting from the `lidar-imu-calib-docker` directory, build the docker image
 ```
@@ -30,7 +30,7 @@ Once the environment setup is successful, press `Ctrl + C` to exit the container
 docker start lidar_jay_ros
 docker exec -it lidar_jay_ros bash
 ```
-------
+
 
 ## Running lidar_IMU_calib
 Once inside the docker container, run the setup script for calibration.
@@ -43,7 +43,7 @@ Run the GUI using the following command. Note the topic names in `calib.sh` and 
 cd lidar_IMU_calib
 ./calib.sh
 ```
-------
+
 
 ## Once the GUI runs...
 Details of the calibration process are in the README.md of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here some takeaways we got from using it.
@@ -53,7 +53,6 @@ Details of the calibration process are in the README.md of [APRIL Lab's lidar_IM
 * Running multiple rosbags:
   * After the first bag runs, quit the GUI (control C in terminal) and the next bag will start running 
 
--------
 
 ## Adding New Data
 * When importing new bag files, add them to `ros_ws/li_data_calib`
