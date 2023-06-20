@@ -1,7 +1,7 @@
 # lidar-imu-calib-docker
 A ROS repository that performs Lidar-IMU calibration using a modified version of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib) repository. The outline of this repository is taken from [orb-slam-16833](https://github.com/Prassi07/orb-slam-16833) and [16833_superodom](https://github.com/JayMaier/16833_superodom/tree/vins-fusion). This repository contains the dockerfile that downloads dependencies needed for the modified lidar_IMU_calib repository and serves as a wrapper repository.
 
-Made for the MMPUG project at the CMU Biorobotics Lab. Tested only with Ubuntu.
+Made for the MMPUG project at the CMU Biorobotics Lab. Tested only with Ubuntu. If your device has an Nvidia GPU, see the [nvidia-gpu branch](https://github.com/vichan7/lidar-imu-calib-docker/tree/nvidia-gpu).
 
 ## Prerequesites 
 [Docker](https://www.docker.com/)
