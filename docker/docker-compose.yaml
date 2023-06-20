@@ -32,13 +32,23 @@ services:
       # Set environment params for GUI container passthrough
       - DISPLAY
       - QT_X11_NO_MITSHM=1
-      - XAUTHORITY=/tmp/.docker.xauth
+      - XAUTHORITY=${XAUTHORITY}
       # - QT_QPA_PLATFORM='offscreen'
       # deployer export for exec call
       # Set the hostnames of different systems
       - HOSTNAME=${HOSTNAME}
       - ROS_MASTER_IP=${HOSTNAME}
       - ROS_HOSTNAME=${HOSTNAME}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+  
     entrypoint:
       - /docker-entrypoint/ws-shell.bash
     tty: true
