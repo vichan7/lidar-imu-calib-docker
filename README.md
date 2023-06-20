@@ -18,12 +18,12 @@ git clone git@github.com:vichan7/lidar_IMU_calib.git
 Starting from the `lidar-imu-calib-docker` directory, build the docker image
 ```
 cd docker
-docker-compose build
+docker compose build
 ```
 Run the docker image with
 ```
 export HOSTNAME=$HOSTNAME
-docker-compose up
+docker compose up
 ```
 Once the environment setup is successful, press `Ctrl + C` to exit the container gracefully. Start and run the container.
 ```
