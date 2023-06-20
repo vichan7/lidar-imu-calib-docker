@@ -61,6 +61,10 @@ Details of the calibration process are in the README.md of [APRIL Lab's lidar_IM
  * Change the topic names in `calib.sh` and `licalib_gui.launch` to match the format of the bag you want to use
 * Saved maps can be found in `ros_ws/li_data_calib` under a folder that shares a name with the .bag file
 
+## Common Errors
+* Don't forget to run `catkin_make` in `ros_ws` after changing C++ code
+* If you get a BagFormatException, try reindexing the rosbag with the command `rosbag reindex <bag_name>.bag`
+
 
 
 
