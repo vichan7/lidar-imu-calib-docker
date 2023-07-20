@@ -46,8 +46,8 @@ cd lidar_IMU_calib
 
 
 ## Once the GUI runs...
-Details of the calibration process are in the README.md of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here are some takeaways we got from using it.
-* Follow steps in [lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib) READ ME
+Details of the calibration process are in the README of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here are some takeaways we got from using it.
+* Follow steps in [lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib) README
   * Can see in terminal when each step is done running
 * Can’t run multiple steps at the same time
 * Running multiple rosbags:
