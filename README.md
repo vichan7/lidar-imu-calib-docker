@@ -25,7 +25,7 @@ Run the docker image with
 export HOSTNAME=$HOSTNAME
 docker compose up
 ```
-Once the environment setup is successful, press `Ctrl + C` to exit the container gracefully. Start and run the container.
+Once the environment setup is successful, press `Ctrl C` to exit the container gracefully. Start and run the container.
 ```
 docker start lidar_jay_ros
 docker exec -it lidar_jay_ros bash
@@ -46,12 +46,12 @@ cd lidar_IMU_calib
 
 
 ## Once the GUI runs...
-Details of the calibration process are in the README.md of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here some takeaways we got from using it.
+Details of the calibration process are in the README.md of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here are some takeaways we got from using it.
 * Follow steps in [lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib) READ ME
   * Can see in terminal when each step is done running
 * Can’t run multiple steps at the same time
 * Running multiple rosbags:
-  * After the first bag runs, quit the GUI (`Ctrl + C` in terminal) and the next bag will start running 
+  * After the first bag runs, quit the GUI (`Ctrl C` in terminal) and the next bag will start running 
 
 
 ## Adding New Data
