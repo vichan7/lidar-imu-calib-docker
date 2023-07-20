@@ -47,22 +47,22 @@ cd lidar_IMU_calib
 
 ## Once the GUI runs...
 Details of the calibration process are in the README.md of [APRIL Lab's lidar_IMU_calib](https://github.com/APRIL-ZJU/lidar_IMU_calib), but here some takeaways we got from using it.
-* Follow steps in lidar_IMU_calib read me
+* Follow steps in lidar_IMU_calib READ ME
   * Can see in terminal when each step is done running
 * Can’t run multiple steps at the same time
 * Running multiple rosbags:
-  * After the first bag runs, quit the GUI (control C in terminal) and the next bag will start running 
+  * After the first bag runs, quit the GUI (`Ctrl + C` in terminal) and the next bag will start running 
 
 
 ## Adding New Data
 * When importing new bag files, add them to `ros_ws/li_data_calib`
  * In ros_ws/src/lidar_IMU_calib/calib.sh replace the names of the bags
  * Change the topic names in `calib.sh` and `licalib_gui.launch` to match the format of the bag you want to use
-* Saved maps can be found in `ros_ws/li_data_calib` under a folder that shares a name with the .bag file
+* Saved maps can be found in `ros_ws/li_data_calib` under a folder that shares a name with the `.bag` file
 
 ## Common Errors
 * Don't forget to run `catkin_make` in `ros_ws` after changing C++ code
-* If you get a BagFormatException, try reindexing the rosbag with the command `rosbag reindex <bag_name>.bag`
+* If you get a `BagFormatException`, try reindexing the rosbag with the command `rosbag reindex <bag_name>.bag`
 
 
 
