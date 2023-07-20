@@ -56,8 +56,8 @@ Details of the calibration process are in the README of [APRIL Lab's lidar_IMU_c
 
 ## Adding New Data
 * When importing new bag files, add them to `ros_ws/li_data_calib`
- * In ros_ws/src/lidar_IMU_calib/calib.sh replace the names of the bags
- * Change the topic names in `calib.sh` and `licalib_gui.launch` to match the format of the bag you want to use
+* In `ros_ws/src/lidar_IMU_calib/calib.sh` replace the names of the bags
+* Change the topic names in `calib.sh` and `licalib_gui.launch` to match the format of the bag you want to use
 * Saved maps can be found in `ros_ws/li_data_calib` under a folder that shares a name with the `.bag` file
 
 ## Common Errors
