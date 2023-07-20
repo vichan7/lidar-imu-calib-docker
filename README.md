@@ -15,7 +15,7 @@ git clone git@github.com:vichan7/lidar_IMU_calib.git
 ```
 
 ## Building Docker Image and Container
-Starting from the `lidar-imu-calib-docker` directory, build the docker image
+Starting from the `lidar-imu-calib-docker` directory, build the docker image.
 ```
 cd docker
 docker compose build
